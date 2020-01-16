@@ -40,7 +40,8 @@ export default class Stage extends Component {
 
   changeHistory(title, from, to) {
     const history = [...this.state.history]
-    history.push({title, from, to})
+    history.unshift({title, from, to})
+    this.setState(() => ({ history }))
   }
 
   changePostPosition (direction, currentIndex) {
@@ -48,7 +49,7 @@ export default class Stage extends Component {
     const nextIndex = (direction === 'up') ? currentIndex - 1 : currentIndex + 1
     const rearrangedPosts = [...posts]
     const [post] = rearrangedPosts.splice(currentIndex, 1) // remove it from current position
-    
+
     rearrangedPosts.splice(nextIndex, 0, post) // place it in a new position
     this.setState({posts: rearrangedPosts})
     this.changeHistory(post.title, currentIndex, nextIndex)
@@ -59,7 +60,7 @@ export default class Stage extends Component {
       <PostList 
         posts={this.state.posts} 
         onChangePosition={(direction, currentIndex) => this.changePostPosition(direction, currentIndex)} />
-      <CommitHistory />
+      <CommitHistory history={this.state.history} />
     </div>
   }
 }
