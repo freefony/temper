@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  --primary: #6354B3;
 }
 
 .App-header {
   position: relative;
   height: 200px;
-  background-color: #6354B3;
+  background-color: var(--primary);
 }
