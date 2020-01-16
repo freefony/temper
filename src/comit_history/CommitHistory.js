@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 
 import History from './History'
+import { connect } from '../common/store'
 
 class CommitHistory extends Component {
   render() {
-    const { history, onTimeTravel } = this.props
+    const { history, handleTimeTravel } = this.props
 
     
     return <div className="container">
@@ -16,11 +17,11 @@ class CommitHistory extends Component {
           from={historyObj.from} 
           to={historyObj.to} key={i} 
           position={i}
-          onTimeTravel={onTimeTravel}/> 
+          onTimeTravel={handleTimeTravel}/> 
       )}
       </div>
     </div>
   }
 }
 
-export default CommitHistory
+export default connect()(CommitHistory)
