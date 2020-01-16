@@ -44,6 +44,12 @@ export default class Stage extends Component {
     this.setState(() => ({ history }))
   }
 
+  handleTimeTravel(position) {
+    const newHistory = [...this.state.history]
+    newHistory.splice(0, position + 1)
+    this.setState(() => ({ history: newHistory }))
+  }
+
   changePostPosition (direction, currentIndex) {
     const { posts } = this.state
     const nextIndex = (direction === 'up') ? currentIndex - 1 : currentIndex + 1
@@ -60,7 +66,7 @@ export default class Stage extends Component {
       <PostList 
         posts={this.state.posts} 
         onChangePosition={(direction, currentIndex) => this.changePostPosition(direction, currentIndex)} />
-      <CommitHistory history={this.state.history} />
+      <CommitHistory history={this.state.history} onTimeTravel={(position) => this.handleTimeTravel(position)} />
     </div>
   }
 }
