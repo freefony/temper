@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import 'animate.css'
 import './stage.css'
 import PostList from '../posts/PostList'
 import CommitHistory from '../comit_history/CommitHistory'
