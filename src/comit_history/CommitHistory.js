@@ -1,27 +1,32 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import History from './History'
 import { connect } from '../common/store'
 
-class CommitHistory extends Component {
-  render() {
-    const { history, handleTimeTravel } = this.props
+const CommitHistory = ({ history, handleTimeTravel }) => {
+  const itemsList = history.map((historyObj, i) => {
+    return (
+      <CSSTransition key={i} timeout={500} classNames="move">
+        <History
+            title={historyObj.title} 
+            from={historyObj.from} 
+            to={historyObj.to} key={i} 
+            position={i}
+            onTimeTravel={(position) => handleTimeTravel(position )}/>
+      </CSSTransition>
+    );
 
+  }).reverse()
     
-    return <div className="container">
-      <div className='text-2xl text-gray-600 text-left max-w-sm shadow-lg bg-white shadow overflow-hidden p-2'>List of actions commited</div>
-      <div className="max-w-sm  bg-gray-100 shadow overflow-hidden p-4">
-      {history.map((historyObj, i) => 
-        <History 
-          title={historyObj.title} 
-          from={historyObj.from} 
-          to={historyObj.to} key={i} 
-          position={i}
-          onTimeTravel={handleTimeTravel}/> 
-      )}
-      </div>
+  return <div className="container">
+    <div className='text-2xl text-gray-600 text-left max-w-sm shadow-lg bg-white shadow overflow-hidden p-2'>List of actions commited</div>
+    <div className="max-w-sm  bg-gray-100 shadow overflow-hidden p-4">
+      <TransitionGroup className="items-section__list">
+        {itemsList}
+      </TransitionGroup>
     </div>
-  }
+  </div>
 }
 
 export default connect()(CommitHistory)

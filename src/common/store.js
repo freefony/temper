@@ -32,13 +32,13 @@ class StoreProvider extends Component {
 
   changeHistory(title, from, to) {
     const history = [...this.state.history]
-    history.unshift({title, from, to})
+    history.push({title, from, to})
     this.setState(() => ({ history }))
   }
 
   handleTimeTravel(position) {
     const newHistory = [...this.state.history]
-    newHistory.splice(0, position + 1)
+    newHistory.splice(position, newHistory.length - position)
     this.setState(() => ({ history: newHistory }))
   }
 
