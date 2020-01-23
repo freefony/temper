@@ -20,9 +20,9 @@ const CommitHistory = ({ history, handleTimeTravel }) => {
   }).reverse()
     
   return <div className="container">
-    <div className='text-2xl text-gray-600 text-left max-w-sm shadow-lg bg-white shadow overflow-hidden p-2'>List of actions commited</div>
-    <div className="max-w-sm  bg-gray-100 shadow overflow-hidden p-4">
-      <TransitionGroup className="items-section__list">
+    <div className='text-2xl text-gray-600 text-left max-w-sm shadow-xl bg-white shadow overflow-hidden p-2 flex-1'>List of actions commited</div>
+    <div className="max-w-sm  bg-gray-100 shadow-lg overflow-hidden p-4">
+      <TransitionGroup>
         {itemsList}
       </TransitionGroup>
     </div>
