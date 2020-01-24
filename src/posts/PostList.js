@@ -3,7 +3,7 @@ import Post from './Post'
 import { connect } from '../common/store'
 import { CSSTransition } from 'react-transition-group'
 
-const PostList = ({ posts, changePostPosition }) => {
+const PostList = ({ posts =[], changePostPosition }) => {
   return <div className='container'>
     <div className='text-xl text-white text-left mb-4'>Sortable Post List</div>
     {posts.map((post, i) => {

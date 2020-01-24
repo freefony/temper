@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`posts components Post should not show arrow down for last element 1`] = `
+<div>
+  <div
+    class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4"
+  >
+    <div
+      class="px-6 py-2 flex justify-between border"
+    >
+      <p
+        class="text-gray-700 text-base py-4"
+      >
+        Post 1
+      </p>
+      <div
+        class="flex flex-col justify-center"
+      >
+        <div
+          class="arrow-btn cursor-pointer"
+        >
+          <svg>
+            arrow_up.svg
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`posts components Post should not show arrow up for first element 1`] = `
+<div>
+  <div
+    class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4"
+  >
+    <div
+      class="px-6 py-2 flex justify-between border"
+    >
+      <p
+        class="text-gray-700 text-base py-4"
+      >
+        Post 1
+      </p>
+      <div
+        class="flex flex-col justify-center"
+      >
+        <div
+          class="arrow-btn cursor-pointer"
+        >
+          <svg>
+            arrow_down.svg
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`posts components Post should render post 1`] = `
+<div>
+  <div
+    class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4"
+  >
+    <div
+      class="px-6 py-2 flex justify-between border"
+    >
+      <p
+        class="text-gray-700 text-base py-4"
+      >
+        Post 1
+      </p>
+      <div
+        class="flex flex-col justify-between"
+      >
+        <div
+          class="arrow-btn cursor-pointer"
+        >
+          <svg>
+            arrow_up.svg
+          </svg>
+        </div>
+        <div
+          class="arrow-btn cursor-pointer"
+        >
+          <svg>
+            arrow_down.svg
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`posts components PostList component should receive data from connect 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="text-xl text-white text-left mb-4"
+    >
+      Sortable Post List
+    </div>
+    <div
+      class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4 slide-in-down-appear slide-in-down-appear-active"
+    >
+      <div
+        class="px-6 py-2 flex justify-between border"
+      >
+        <p
+          class="text-gray-700 text-base py-4"
+        >
+          Post 1
+        </p>
+        <div
+          class="flex flex-col justify-center"
+        >
+          <div
+            class="arrow-btn cursor-pointer"
+          >
+            <svg>
+              arrow_down.svg
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4 slide-in-down-appear slide-in-down-appear-active"
+    >
+      <div
+        class="px-6 py-2 flex justify-between border"
+      >
+        <p
+          class="text-gray-700 text-base py-4"
+        >
+          Post 2
+        </p>
+        <div
+          class="flex flex-col justify-between"
+        >
+          <div
+            class="arrow-btn cursor-pointer"
+          >
+            <svg>
+              arrow_up.svg
+            </svg>
+          </div>
+          <div
+            class="arrow-btn cursor-pointer"
+          >
+            <svg>
+              arrow_down.svg
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4 slide-in-down-appear slide-in-down-appear-active"
+    >
+      <div
+        class="px-6 py-2 flex justify-between border"
+      >
+        <p
+          class="text-gray-700 text-base py-4"
+        >
+          Post 3
+        </p>
+        <div
+          class="flex flex-col justify-between"
+        >
+          <div
+            class="arrow-btn cursor-pointer"
+          >
+            <svg>
+              arrow_up.svg
+            </svg>
+          </div>
+          <div
+            class="arrow-btn cursor-pointer"
+          >
+            <svg>
+              arrow_down.svg
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-sm shadow-lg bg-white shadow rounded overflow-hidden mb-4 slide-in-down-appear slide-in-down-appear-active"
+    >
+      <div
+        class="px-6 py-2 flex justify-between border"
+      >
+        <p
+          class="text-gray-700 text-base py-4"
+        >
+          Post 4
+        </p>
+        <div
+          class="flex flex-col justify-center"
+        >
+          <div
+            class="arrow-btn cursor-pointer"
+          >
+            <svg>
+              arrow_up.svg
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`posts components PostList component should render component by itself 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="text-xl text-white text-left mb-4"
+    >
+      Sortable Post List
+    </div>
+  </div>
+</div>
+`;
+
+exports[`posts components PostList component should render when wrapped in connect 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="text-xl text-white text-left mb-4"
+    >
+      Sortable Post List
+    </div>
+  </div>
+</div>
+`;
