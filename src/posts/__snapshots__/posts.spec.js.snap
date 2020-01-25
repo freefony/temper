@@ -231,17 +231,3 @@ exports[`posts components PostList component should render component by itself 1
   </div>
 </div>
 `;
-
-exports[`posts components PostList component should render when wrapped in connect 1`] = `
-<div>
-  <div
-    class="container"
-  >
-    <div
-      class="text-xl text-white text-left mb-4"
-    >
-      Sortable Post List
-    </div>
-  </div>
-</div>
-`;

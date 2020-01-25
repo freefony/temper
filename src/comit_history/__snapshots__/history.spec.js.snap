@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History CommitHistory should display history cards with correct text 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="text-2xl text-gray-600 text-left max-w-sm shadow-xl bg-white shadow overflow-hidden p-2 flex-1"
+    >
+      List of actions commited
+    </div>
+    <div
+      class="max-w-sm  bg-gray-100 shadow-lg overflow-hidden p-4"
+    >
+      <div>
+        <div
+          class="px-2 py-4 flex flex-no-wrap justify-between bg-white border text-sm"
+        >
+          <p
+            class="text-gray-700 text-left"
+          >
+            Moved 
+            Post 3
+             from index 
+            1
+              to index 
+            0
+          </p>
+          <div
+            class="flex-none"
+          >
+            <button
+              class="bg-green-300 hover:bg-green-200 text-gray-700 font-bold py-2 px-2 rounded"
+            >
+              Time travel
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-2 py-4 flex flex-no-wrap justify-between bg-white border text-sm"
+        >
+          <p
+            class="text-gray-700 text-left"
+          >
+            Moved 
+            Post 2
+             from index 
+            4
+              to index 
+            3
+          </p>
+          <div
+            class="flex-none"
+          >
+            <button
+              class="bg-green-300 hover:bg-green-200 text-gray-700 font-bold py-2 px-2 rounded"
+            >
+              Time travel
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-2 py-4 flex flex-no-wrap justify-between bg-white border text-sm"
+        >
+          <p
+            class="text-gray-700 text-left"
+          >
+            Moved 
+            Post 1
+             from index 
+            1
+              to index 
+            2
+          </p>
+          <div
+            class="flex-none"
+          >
+            <button
+              class="bg-green-300 hover:bg-green-200 text-gray-700 font-bold py-2 px-2 rounded"
+            >
+              Time travel
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-2 py-4 flex flex-no-wrap justify-between bg-white border text-sm"
+        >
+          <p
+            class="text-gray-700 text-left"
+          >
+            Moved 
+            Post 1
+             from index 
+            0
+              to index 
+            1
+          </p>
+          <div
+            class="flex-none"
+          >
+            <button
+              class="bg-green-300 hover:bg-green-200 text-gray-700 font-bold py-2 px-2 rounded"
+            >
+              Time travel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History CommitHistory should render component 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="text-2xl text-gray-600 text-left max-w-sm shadow-xl bg-white shadow overflow-hidden p-2 flex-1"
+    >
+      List of actions commited
+    </div>
+    <div
+      class="max-w-sm  bg-gray-100 shadow-lg overflow-hidden p-4"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History History should contain a clickable btn that calls the timeTravelAction fnc props when clicked 1`] = `
+<div>
+  <div
+    class="px-2 py-4 flex flex-no-wrap justify-between bg-white border text-sm"
+  >
+    <p
+      class="text-gray-700 text-left"
+    >
+      Moved 
+      Post 1
+       from index 
+      0
+        to index 
+      1
+    </p>
+    <div
+      class="flex-none"
+    >
+      <button
+        class="bg-green-300 hover:bg-green-200 text-gray-700 font-bold py-2 px-2 rounded"
+      >
+        Time travel
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`History History should display text and time travel btn 1`] = `
+<div>
+  <div
+    class="px-2 py-4 flex flex-no-wrap justify-between bg-white border text-sm"
+  >
+    <p
+      class="text-gray-700 text-left"
+    >
+      Moved 
+      Post 1
+       from index 
+      0
+        to index 
+      1
+    </p>
+    <div
+      class="flex-none"
+    >
+      <button
+        class="bg-green-300 hover:bg-green-200 text-gray-700 font-bold py-2 px-2 rounded"
+      >
+        Time travel
+      </button>
+    </div>
+  </div>
+</div>
+`;

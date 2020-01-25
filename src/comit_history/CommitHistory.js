@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import History from './History'
 import { connect } from '../common/store'
 
-const CommitHistory = ({ history, handleTimeTravel }) => {
+const CommitHistory = ({ history = [], handleTimeTravel }) => {
   const itemsList = history.map((historyObj, i) => {
     return (
       <CSSTransition key={i} timeout={500} classNames="move">

@@ -17,13 +17,6 @@ describe('posts components', () => {
       expect(getByText(/Sortable Post List/i)).toBeInTheDocument()
     })
 
-    it('should render when wrapped in connect', () => {
-      const PostListComp = connect()(PostList)
-      const { container, getByText} = render(<PostListComp />)
-      expect(container).toMatchSnapshot()
-      expect(getByText(/Sortable Post List/i)).toBeInTheDocument()
-    })
-
     it('should receive data from connect', () => {
       const _MockConnect = (Component) => (props) => {
         const responseData = data.posts.slice(0, 4)
